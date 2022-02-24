@@ -152,8 +152,8 @@ html {
 }
 
 .logo {
-  height: 1.4em !important;
-  width: 2.5em !important;
+  height: 1.6em !important;
+  width: 2.8em !important;
 }
 
 .navbar-nav .nav-link {
@@ -258,11 +258,11 @@ html {
   background-position: top center;
   background-repeat: no-repeat;
   padding-bottom: 30px !important;
-  padding-top: 30px !important;
+  padding-top: 90px !important;
 }
 
 .home-content {
-  padding: 9rem 0 2rem !important;
+  /* padding: 2rem 0 2rem !important; */
   color: whitesmoke;
   text-align: left;
 }
@@ -316,8 +316,8 @@ html {
 
 .home-about-section {
   position: relative;
-  padding-bottom: 70px !important;
-  padding-top: 70px !important;
+  padding-bottom: 10px !important;
+  /* padding-top: 70px !important; */
 }
 
 .home-about-description {
@@ -736,4 +736,43 @@ html {
 }
 .fork-btn-inner::after {
   display: none !important;
+}
+
+.datetime-section {
+  display: flex;
+  color: #000000;
+  position: relative !important;
+}
+
+.contact-section {
+  position: relative !important;
+  padding-top: 150px !important;
+  padding-bottom: 30px !important;
+}
+.row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 100%;
+  flex: 1;
+}
+
+.meeting-button {
+  align-self: center;
+  width :50%;
+}
+.meeting-button:hover {
+  transform: scale(1.02) !important;
+  overflow: hidden !important;
+  box-shadow: 0 4px 4px 5px rgba(129, 72, 144, 0.561) !important;
+}
+
+.errorMessage {
+  color: white;
 }

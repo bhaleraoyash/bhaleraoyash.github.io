@@ -3,6 +3,11 @@ import { Container, Row, Col } from "react-bootstrap";
 import ProjectCard from "./ProjectCards";
 import Particle from "../Particle";
 
+import hog from "../../Assets/Projects/hog-cell.png";
+import canny from "../../Assets/Projects/canny.png";
+import depression from "../../Assets/Projects/depression.png";
+import covid from "../../Assets/Projects/covid.png";
+import dataViz from "../../Assets/Projects/dataViz.png";
 import leaf from "../../Assets/Projects/leaf.png";
 import emotion from "../../Assets/Projects/emotion.jpeg";
 import editor from "../../Assets/Projects/codeEditor.png";
@@ -16,33 +21,65 @@ function Projects() {
       <Particle />
       <Container>
         <h1 className="project-heading">
-          My Recent <strong className="purple">Works </strong>
+          My Recent <strong className="purple">Projects </strong>
         </h1>
         <p style={{ color: "white" }}>
           Here are a few projects I've worked on recently.
         </p>
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
+
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={chatify}
+              imgPath={dataViz}
               isBlog={false}
-              title="Chatify"
-              description="Personal Chat Room or Workspace to share resources and hangout with friends build with react.js, Material-UI, and Firebase. Have features which allows user for realtime messaging, image sharing as well as supports reactions on messages."
-              link="https://github.com/soumyajit4419/Chatify"
+              title="Data Visualization of US city temperatures"
+              description="Visualize min, max and average temperature data of 4 US cities from the year 2015 using R."
+              link="https://github.com/bhaleraoyash/US-City-Temperature-Data-Viz"
+            />
+          </Col>
+
+
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={hog}
+              isBlog={false}
+              title="HOG Feature Descriptor"
+              description="Detect HOG features in test images using the HOG Feature Descriptor algorithm. And, classify the test images as human/no-human using the K Nearest Neighbors algorithm with given training images. Implemented in Python."
+              link="https://github.com/bhaleraoyash/HOG-Feature-Descriptor"
             />
           </Col>
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={leaf}
+              imgPath={covid}
               isBlog={false}
-              title="Plant AI"
-              description="Used the plant disease dataset from Kaggle and trained a image classifer model using 'PyTorch' framework using CNN and Transfer Learning with 38 classes of various plant leaves. The model was successfully able to detect diseased and healthy leaves of 14 unique plants. I was able to achieve an accuracy of 98% by using Resnet34 pretrained model."
-              link="https://github.com/soumyajit4419/Plant_AI"
+              title="COVID-19 Donation Portal"
+              description="Donation portal for donation of grocery kits to COVID-19 patients admitted to government hospitals. Salesforce site implemented in Apex and Javascript using Lightning Web and Aura component frameworks."
+              link="www.cloudwerxcares.com"
             />
           </Col>
 
+          {/* <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={canny}
+              isBlog={false}
+              title="Canny Edge Detector"
+              description="Detect edges in images using the Canny Edge Detection algorithm. Implemented in Python from scratch without using OpenCV."
+              link="https://github.com/bhaleraoyash/Canny-Edge-Detector"
+            />
+          </Col> */}
+
           <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={depression}
+              isBlog={false}
+              title="Detecting Symptoms of Depression"
+              description="Predict percentage of depression in text input using Deep Learning and Natural Language Processing. Implemented a deep learning model using TensorFlow and Recurrent Neural Networks in Python."
+              link="www.detectdepression.com"
+            />
+          </Col>
+
+          {/* <Col md={4} className="project-card">
             <ProjectCard
               imgPath={editor}
               isBlog={false}
@@ -81,7 +118,7 @@ function Projects() {
               Then used Open-CV to detect the face in an image and then pass the face to the classifer to predict the emotion of a person."
               link="https://github.com/soumyajit4419/Face_And_Emotion_Detection"
             />
-          </Col>
+          </Col> */}
         </Row>
       </Container>
     </Container>

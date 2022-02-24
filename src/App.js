@@ -10,8 +10,8 @@ import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import "./style.css";
 import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
-
 import ScrollToTop from "./components/ScrollToTop";
+import Contact from "./components/Contact";
 
 function App() {
   const [load, upadateLoad] = useState(true);
@@ -35,8 +35,9 @@ function App() {
           <Route path="/project" component={Projects} />
           <Route path="/about" component={About} />
           <Route path="/resume" component={Resume} />
+          <Route path="/contact" component={Contact} />
         </Switch>
-        <Footer />
+        {/* <Footer /> */}
       </div>
     </Router>
   );
