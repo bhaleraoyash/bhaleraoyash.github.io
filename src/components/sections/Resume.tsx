@@ -26,21 +26,22 @@ export function Resume() {
       >
         <a
           href={RESUME_PATH}
-          download="Yash_Bhalerao_Resume.pdf"
-          className="flex items-center gap-2 h-14 px-10 rounded-full text-base font-semibold text-white transition-all duration-200 hover:brightness-110 active:scale-95"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="flex items-center justify-center gap-2 h-14 w-60 rounded-full text-base font-semibold text-white transition-all duration-200 hover:brightness-110 active:scale-95"
           style={{ background: "#0071e3" }}
         >
-          <Download size={18} />
-          Download Resume
+          <FileText size={18} />
+          View Resume
         </a>
         <a
           href={RESUME_PATH}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="flex items-center gap-2 h-14 px-10 rounded-full text-base font-semibold text-[#f5f5f7] border border-white/[0.15] hover:bg-white/[0.05] hover:border-white/25 transition-all duration-200"
+          download="Yash_Bhalerao_Resume.pdf"
+          className="flex items-center justify-center gap-2 h-14 w-60 rounded-full text-base font-semibold text-[#f5f5f7] border border-white/[0.15] hover:bg-white/[0.05] hover:border-white/25 transition-all duration-200"
+          style={{ background: "#1c1c1e" }}
         >
-          <FileText size={18} />
-          Open in New Tab
+          <Download size={18} />
+          Download Resume
         </a>
       </m.div>
     </SectionWrapper>

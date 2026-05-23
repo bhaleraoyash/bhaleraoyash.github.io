@@ -1,7 +1,7 @@
 "use client";
 
 import { m } from "framer-motion";
-import { Mail, ChevronDown } from "lucide-react";
+import { Mail, ChevronDown, FileText } from "lucide-react";
 import { FaGithub, FaLinkedinIn, FaInstagram } from "react-icons/fa";
 import { personal } from "@/data/personal";
 import { heroStaggerVariants, heroChildVariants, heroNameVariants } from "@/lib/motion";
@@ -132,11 +132,13 @@ export function Hero() {
         >
           <a
             href="/resume/yash-bhalerao-resume.pdf"
-            download
-            className="h-14 px-10 rounded-full text-base font-semibold text-white transition-all duration-200 hover:brightness-110 active:scale-95 flex items-center gap-2"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="h-14 w-60 flex items-center justify-center gap-2 rounded-full text-base font-semibold text-white transition-all duration-200 hover:brightness-110 active:scale-95"
             style={{ background: "#0071e3" }}
           >
-            Download Resume
+            <FileText size={18} />
+            View Resume
           </a>
         </m.div>
       </m.div>
