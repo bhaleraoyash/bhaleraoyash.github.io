@@ -9,7 +9,7 @@ export const personal: PersonalInfo = {
     "Distributed Systems",
   ],
   tagline: "Full-stack engineer specializing in high-throughput, low-latency distributed systems.",
-  bio: "Software Engineer building fixed income trading platforms. MS CS from NYU Tandon. I've shipped trading workflows across Java/Swing, React, Kafka, and Salesforce — from intern tooling to institutional client onboarding.",
+  bio: "Software Engineer specializing in high-throughput distributed systems. I design and build low-latency backend infrastructure in Java, working across the full stack with a focus on performance and reliability at scale.",
   location: "New York, NY",
   email: "bhaleraoyash6@gmail.com",
   social: [
